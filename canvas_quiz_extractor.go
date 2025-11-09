@@ -34,6 +34,7 @@ type QuizItemInner struct {
 	ItemBody         string          `json:"item_body"`
 	UserResponseType string          `json:"user_response_type"`
 	Title            string          `json:"title"`
+	ID               string          `json:"id"`
 }
 
 type QuizItem struct {
@@ -42,7 +43,6 @@ type QuizItem struct {
 	PointsPossible float64       `json:"points_possible"`
 	Position       int           `json:"position"`
 	QuestionNumber int           `json:"question_number"`
-	ItemID         string        `json:"id"`
 }
 
 type ResultValueEntry struct {
@@ -142,7 +142,7 @@ func writeMarkdown(outPath string, quiz []QuizItem, results []ResultItem) error 
 		num := idx + 1
 		sb.WriteString(fmt.Sprintf("## %d) %s\n", num, questionText))
 
-		res, err := findResultByID(results, q.ItemID)
+		res, err := findResultByID(results, q.Item.ID)
 		if err != nil {
 			sb.WriteString("- Options: (no result data)\n\n")
 			continue
