@@ -83,6 +83,53 @@ func mustReadJSON[T any](path string, v *T) error {
 	return json.Unmarshal(b, v)
 }
 
+// annotateBlanks replaces runs of underscores (___) with labeled placeholders [Blank i].
+// If the number of detected placeholders is fewer than provided blanks, it will still
+// label what it finds and rely on the list summary for remaining blanks.
+func annotateBlanks(question string, blanksCount int) string {
+	if blanksCount <= 0 || question == "" {
+		return question
+	}
+	re := regexp.MustCompile(`_{3,}`)
+	i := 0
+	annotated := re.ReplaceAllStringFunc(question, func(_ string) string {
+		i++
+		return fmt.Sprintf("[Blank %d]", i)
+	})
+	// If we couldn't find any obvious placeholders and there's exactly one blank,
+	// place it before the final punctuation (., ?, !) as a reasonable default.
+	if i == 0 && blanksCount == 1 {
+		tail := regexp.MustCompile(`([\.!\?])$`)
+		if tail.MatchString(annotated) {
+			annotated = tail.ReplaceAllString(annotated, " [Blank 1]$1")
+		} else {
+			annotated = annotated + " [Blank 1]"
+		}
+	}
+	return annotated
+}
+
+// annotateBlanksFromHTML replaces explicit blank spans in HTML (e.g., <span id="blank_..."></span>)
+// with [Blank i] markers, then strips HTML to plain text.
+func annotateBlanksFromHTML(htmlQuestion string, blanks []QuizBlank) string {
+	if strings.TrimSpace(htmlQuestion) == "" {
+		return ""
+	}
+	// Replace <span id="blank_..."></span> with [Blank i]
+	reSpan := regexp.MustCompile(`(?i)<span[^>]*id=\"blank_[^\"]*\"[^>]*></span>`) // greedy span with id starting blank_
+	i := 0
+	replaced := reSpan.ReplaceAllStringFunc(htmlQuestion, func(_ string) string {
+		i++
+		return fmt.Sprintf("[Blank %d]", i)
+	})
+	if i > 0 {
+		// Now strip remaining HTML
+		return stripHTML(replaced)
+	}
+	// Fallback to generic underscore-based annotation on stripped text
+	return annotateBlanks(stripHTML(htmlQuestion), len(blanks))
+}
+
 // stripHTML does a simple tag stripper and entity unescape for short HTML fragments.
 func stripHTML(s string) string {
 	var b strings.Builder
@@ -252,7 +299,13 @@ func writeMarkdown(outPath string, quiz []QuizItem, results []ResultItem, weekLa
 	})
 
 	for idx, q := range sorted {
-		questionText := stripHTML(q.Item.ItemBody)
+		// Prefer HTML-aware blank annotation for open entry questions
+		rawQuestion := stripHTML(q.Item.ItemBody)
+		isBlank := len(q.Item.InteractionData.Blanks) > 0
+		questionText := rawQuestion
+		if isBlank {
+			questionText = annotateBlanksFromHTML(q.Item.ItemBody, q.Item.InteractionData.Blanks)
+		}
 		num := idx + 1
 		sb.WriteString(fmt.Sprintf("## %d) %s\n", num, questionText))
 
@@ -262,20 +315,23 @@ func writeMarkdown(outPath string, quiz []QuizItem, results []ResultItem, weekLa
 			continue
 		}
 
-		isBlank := len(q.Item.InteractionData.Blanks) > 0
 		// Normalize choices given heterogeneous encodings
 		q.Item.InteractionData.normalizeChoices(q.Item.UserResponseType, q.Item.InteractionType.Slug)
 		choices := q.Item.InteractionData.Choices
 
 		if isBlank {
 			sb.WriteString("- Options: N/A (open entry)\n\n")
-			ans := ""
-			// Extract answer from scored data map form if present
-			if len(q.Item.InteractionData.Blanks) > 0 && len(res.Scored.ValueRaw) > 0 {
-				var mapForm map[string]ResultValueEntry
-				if err2 := json.Unmarshal(res.Scored.ValueRaw, &mapForm); err2 == nil {
-					bid := q.Item.InteractionData.Blanks[0].ID
-					if v, ok := mapForm[bid]; ok {
+			// Extract answers for each blank and report with positions
+			var mapForm map[string]ResultValueEntry
+			if len(res.Scored.ValueRaw) > 0 {
+				_ = json.Unmarshal(res.Scored.ValueRaw, &mapForm)
+			}
+			sb.WriteString("- Blanks and answers:\n")
+			for i, b := range q.Item.InteractionData.Blanks {
+				label := fmt.Sprintf("Blank %d", i+1)
+				ans := ""
+				if mapForm != nil {
+					if v, ok := mapForm[b.ID]; ok {
 						if v.CorrectAnswer != "" {
 							ans = v.CorrectAnswer
 						} else if v.UserResponse != "" {
@@ -283,11 +339,12 @@ func writeMarkdown(outPath string, quiz []QuizItem, results []ResultItem, weekLa
 						}
 					}
 				}
+				if ans == "" {
+					ans = "(answer unavailable)"
+				}
+				sb.WriteString(fmt.Sprintf("  - %s: %s\n", label, stripHTML(ans)))
 			}
-			if ans == "" {
-				ans = "(answer unavailable)"
-			}
-			sb.WriteString(fmt.Sprintf("- Answer: %s\n\n", stripHTML(ans)))
+			sb.WriteString("\n")
 			continue
 		}
 
