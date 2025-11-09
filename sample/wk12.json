@@ -1,0 +1,539 @@
+[
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "blanks": [
+                    {
+                        "answer_type": "openEntry",
+                        "id": "6e336fb2-f650-4850-8a62-cd638dd8ec21"
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eTools like Prometheus and Grafana are used for \u003cspan id=\"blank_6e336fb2-f650-4850-8a62-cd638dd8ec21\"\u003e\u003c/span\u003e and visualisation.\u003c/p\u003e",
+            "user_response_type": "MultipleResponse",
+            "interaction_type": {
+                "name": "Rich Fill in the Blank",
+                "slug": "rich-fill-blank",
+                "id": "13"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66274",
+            "label": null,
+            "title": "Question 10",
+            "properties": {
+                "shuffle_rules": {
+                    "blanks": {}
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 1,
+        "question_number": 1,
+        "quiz_entry_id": "149511",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 1
+    },
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "choices": [
+                    {
+                        "item_body": "\u003cp\u003eDetect security vulnerabilities\u003c/p\u003e",
+                        "id": "09e0d452-5cf0-4111-b1b8-77fed5ac6ae0",
+                        "position": 1
+                    },
+                    {
+                        "item_body": "\u003cp\u003eTest network latency\u003c/p\u003e",
+                        "id": "dafc474c-94da-4ba6-bec9-d028f84e1ff9",
+                        "position": 2
+                    },
+                    {
+                        "item_body": "\u003cp\u003eEvaluate long-term stability under normal load\u003c/p\u003e",
+                        "id": "1f7da557-e1cb-40f3-bf90-99796cfddade",
+                        "position": 3
+                    },
+                    {
+                        "item_body": "\u003cp\u003eTest scalability during peak hours\u003c/p\u003e",
+                        "id": "57c1c085-c045-4e9f-b725-d01036c68a66",
+                        "position": 4
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eSoak testing is used to:\u003c/p\u003e",
+            "user_response_type": "Uuid",
+            "interaction_type": {
+                "name": "Multiple Choice",
+                "slug": "choice",
+                "id": "1"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66208",
+            "label": null,
+            "title": "Question 3",
+            "properties": {
+                "vary_points_by_answer": false,
+                "shuffle_rules": {
+                    "choices": {
+                        "shuffled": true,
+                        "to_lock": []
+                    }
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 2,
+        "question_number": 2,
+        "quiz_entry_id": "149445",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 2
+    },
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "choices": [
+                    {
+                        "item_body": "\u003cp\u003eExcessive HTTP calls\u003c/p\u003e",
+                        "id": "6113e4ea-7f9e-41ec-8ca4-a44cc64a50ea",
+                        "position": 1
+                    },
+                    {
+                        "item_body": "\u003cp\u003eSlow database queries\u003c/p\u003e",
+                        "id": "11a3dbc6-e727-4125-95f6-6cf69e5c5ceb",
+                        "position": 2
+                    },
+                    {
+                        "item_body": "\u003cp\u003eBlocking I/O\u003c/p\u003e",
+                        "id": "152009b2-effc-4e13-b1e6-63486725ae17",
+                        "position": 3
+                    },
+                    {
+                        "item_body": "\u003cp\u003eEfficient indexing\u003c/p\u003e",
+                        "id": "ae722af5-c608-4f57-9a02-42d4407256b8",
+                        "position": 4
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eWhat are common bottlenecks in web applications?\u003c/p\u003e",
+            "user_response_type": "MultipleUuid",
+            "interaction_type": {
+                "name": "Multiple Answer",
+                "slug": "multi-answer",
+                "id": "2"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66255",
+            "label": null,
+            "title": "Question 8",
+            "properties": {
+                "shuffle_rules": {
+                    "choices": {
+                        "shuffled": true,
+                        "to_lock": []
+                    }
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 3,
+        "question_number": 3,
+        "quiz_entry_id": "149491",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 3
+    },
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "choices": [
+                    {
+                        "item_body": "\u003cp\u003eLatency\u003c/p\u003e",
+                        "id": "420b91b3-0c1b-40c5-a710-77d9430e7d6e",
+                        "position": 1
+                    },
+                    {
+                        "item_body": "\u003cp\u003eResponse Time\u003c/p\u003e",
+                        "id": "b7a5a42e-69f1-4f82-8cac-45a1ba1b0d80",
+                        "position": 2
+                    },
+                    {
+                        "item_body": "\u003cp\u003eThroughput\u003c/p\u003e",
+                        "id": "cb5b23e5-c53d-4230-9d2c-6bce8582bcba",
+                        "position": 3
+                    },
+                    {
+                        "item_body": "\u003cp\u003eError Rate\u003c/p\u003e",
+                        "id": "0f4e280a-9e15-4281-8a55-d5f05195d3b7",
+                        "position": 4
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eWhich metric best represents the total time taken by a system to respond to a request?\u003c/p\u003e",
+            "user_response_type": "Uuid",
+            "interaction_type": {
+                "name": "Multiple Choice",
+                "slug": "choice",
+                "id": "1"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66179",
+            "label": null,
+            "title": "Question 1",
+            "properties": {
+                "vary_points_by_answer": false,
+                "shuffle_rules": {
+                    "choices": {
+                        "shuffled": true,
+                        "to_lock": []
+                    }
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 4,
+        "question_number": 4,
+        "quiz_entry_id": "149415",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 4
+    },
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "choices": [
+                    {
+                        "item_body": "\u003cp\u003eSplitting application modules\u003c/p\u003e",
+                        "id": "e8ac291d-14e2-4815-9f3d-27e89ddbe354",
+                        "position": 1
+                    },
+                    {
+                        "item_body": "\u003cp\u003eDistributing traffic across servers\u003c/p\u003e",
+                        "id": "5f3d6ae3-597a-4e04-9104-2c8b8626e907",
+                        "position": 2
+                    },
+                    {
+                        "item_body": "\u003cp\u003eAdding more power (CPU, RAM) to a server\u003c/p\u003e",
+                        "id": "bf4382bb-0c67-4319-a032-0f8ba8370d6d",
+                        "position": 3
+                    },
+                    {
+                        "item_body": "\u003cp\u003eAdding more instances\u003c/p\u003e",
+                        "id": "f379b5ea-54ca-4f99-ac29-67503fe30e52",
+                        "position": 4
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eVertical scaling refers to:\u003c/p\u003e",
+            "user_response_type": "Uuid",
+            "interaction_type": {
+                "name": "Multiple Choice",
+                "slug": "choice",
+                "id": "1"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66187",
+            "label": null,
+            "title": "Question 2",
+            "properties": {
+                "vary_points_by_answer": false,
+                "shuffle_rules": {
+                    "choices": {
+                        "shuffled": true,
+                        "to_lock": []
+                    }
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 5,
+        "question_number": 5,
+        "quiz_entry_id": "149424",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 5
+    },
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "choices": [
+                    {
+                        "item_body": "\u003cp\u003eUnit Testing\u003c/p\u003e",
+                        "id": "777c0188-04a1-48f6-92fb-d74b2a444534",
+                        "position": 1
+                    },
+                    {
+                        "item_body": "\u003cp\u003eSpike Testing\u003c/p\u003e",
+                        "id": "7e3ea0b9-a46a-4355-90c6-3b8d7aad371c",
+                        "position": 2
+                    },
+                    {
+                        "item_body": "\u003cp\u003eSoak Testing\u003c/p\u003e",
+                        "id": "7a4cc1c3-e8c8-43d7-9fa6-99aa0f282a4f",
+                        "position": 3
+                    },
+                    {
+                        "item_body": "\u003cp\u003eLoad Testing\u003c/p\u003e",
+                        "id": "0c36839b-3923-476d-9c7a-29441b95d124",
+                        "position": 4
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eWhich testing type is best suited for observing behaviour under sudden traffic surges?\u003c/p\u003e",
+            "user_response_type": "Uuid",
+            "interaction_type": {
+                "name": "Multiple Choice",
+                "slug": "choice",
+                "id": "1"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66231",
+            "label": null,
+            "title": "Question 6",
+            "properties": {
+                "vary_points_by_answer": false,
+                "shuffle_rules": {
+                    "choices": {
+                        "shuffled": true,
+                        "to_lock": []
+                    }
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 6,
+        "question_number": 6,
+        "quiz_entry_id": "149467",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 6
+    },
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "choices": [
+                    {
+                        "item_body": "\u003cp\u003ePerformance Efficiency\u003c/p\u003e",
+                        "id": "200f8d71-8272-4017-9b97-99a721bef69b",
+                        "position": 1
+                    },
+                    {
+                        "item_body": "\u003cp\u003eLogin functionality\u003c/p\u003e",
+                        "id": "6b0ae109-9277-4253-aa6c-6d36fff3175f",
+                        "position": 2
+                    },
+                    {
+                        "item_body": "\u003cp\u003eShopping cart integration\u003c/p\u003e",
+                        "id": "0c18f5f4-65b1-4433-a0a8-f63599d3d309",
+                        "position": 3
+                    },
+                    {
+                        "item_body": "\u003cp\u003eUser registration\u003c/p\u003e",
+                        "id": "392ba198-b2e0-431c-8fc9-bea060377bb8",
+                        "position": 4
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eWhich of the following is a non-functional requirement?\u003c/p\u003e",
+            "user_response_type": "Uuid",
+            "interaction_type": {
+                "name": "Multiple Choice",
+                "slug": "choice",
+                "id": "1"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66220",
+            "label": null,
+            "title": "Question 5",
+            "properties": {
+                "vary_points_by_answer": false,
+                "shuffle_rules": {
+                    "choices": {
+                        "shuffled": true,
+                        "to_lock": []
+                    }
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 7,
+        "question_number": 7,
+        "quiz_entry_id": "149456",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 7
+    },
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "choices": [
+                    {
+                        "item_body": "\u003cp\u003eLatency\u003c/p\u003e",
+                        "id": "8bfbe330-2889-4f7a-b12d-de4c5dbaeda5",
+                        "position": 1
+                    },
+                    {
+                        "item_body": "\u003cp\u003eResponse time\u003c/p\u003e",
+                        "id": "b8a9aafc-5837-4080-832e-0cb0e431e34b",
+                        "position": 2
+                    },
+                    {
+                        "item_body": "\u003cp\u003eScalability\u003c/p\u003e",
+                        "id": "f35680fc-75bb-4367-8aaa-beb37b32f3ed",
+                        "position": 3
+                    },
+                    {
+                        "item_body": "\u003cp\u003eThroughput\u003c/p\u003e",
+                        "id": "c8a9255e-cb3d-4487-8fbe-0883818b94b9",
+                        "position": 4
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eWhich of the following are considered performance metrics?\u003c/p\u003e",
+            "user_response_type": "MultipleUuid",
+            "interaction_type": {
+                "name": "Multiple Answer",
+                "slug": "multi-answer",
+                "id": "2"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66244",
+            "label": null,
+            "title": "Question 7",
+            "properties": {
+                "shuffle_rules": {
+                    "choices": {
+                        "shuffled": true,
+                        "to_lock": []
+                    }
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 8,
+        "question_number": 8,
+        "quiz_entry_id": "149480",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 8
+    },
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "choices": [
+                    {
+                        "item_body": "\u003cp\u003eDistributed caching\u003c/p\u003e",
+                        "id": "3ba777cc-2e25-44a1-aaa3-0fe825f5591d",
+                        "position": 1
+                    },
+                    {
+                        "item_body": "\u003cp\u003eLoad Balancer\u003c/p\u003e",
+                        "id": "66d0417a-c419-4e4d-92f1-ed4c5e21872c",
+                        "position": 2
+                    },
+                    {
+                        "item_body": "\u003cp\u003eStateless services\u003c/p\u003e",
+                        "id": "2b84dc05-4aaa-4255-a6d1-2d04edbba843",
+                        "position": 3
+                    },
+                    {
+                        "item_body": "\u003cp\u003eVertical scaling\u003c/p\u003e",
+                        "id": "fa806323-0d51-4b7b-ae2d-113e417cac18",
+                        "position": 4
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eWhich of the following are scalability patterns?\u003c/p\u003e",
+            "user_response_type": "MultipleUuid",
+            "interaction_type": {
+                "name": "Multiple Answer",
+                "slug": "multi-answer",
+                "id": "2"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66265",
+            "label": null,
+            "title": "Question 9",
+            "properties": {
+                "shuffle_rules": {
+                    "choices": {
+                        "shuffled": true,
+                        "to_lock": []
+                    }
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 9,
+        "question_number": 9,
+        "quiz_entry_id": "149502",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 9
+    },
+    {
+        "calculator_type": "none",
+        "item": {
+            "interaction_data": {
+                "choices": [
+                    {
+                        "item_body": "\u003cp\u003eVisual Studio\u003c/p\u003e",
+                        "id": "c9427005-aff4-451e-a92e-6d46a1cfbd79",
+                        "position": 1
+                    },
+                    {
+                        "item_body": "\u003cp\u003eJenkins\u003c/p\u003e",
+                        "id": "c1a48d62-88e5-4ae7-b867-20ccfc6e5d5d",
+                        "position": 2
+                    },
+                    {
+                        "item_body": "\u003cp\u003eApache JMeter\u003c/p\u003e",
+                        "id": "e333aa34-0b48-44c0-bd33-04d720778152",
+                        "position": 3
+                    },
+                    {
+                        "item_body": "\u003cp\u003eDocker\u003c/p\u003e",
+                        "id": "3c96bca5-07b4-46aa-a6cb-62234122e82e",
+                        "position": 4
+                    }
+                ]
+            },
+            "item_body": "\u003cp\u003eWhich of the following tools is commonly used for load testing?\u003c/p\u003e",
+            "user_response_type": "Uuid",
+            "interaction_type": {
+                "name": "Multiple Choice",
+                "slug": "choice",
+                "id": "1"
+            },
+            "outcome_alignment_set_guid": null,
+            "id": "66197",
+            "label": null,
+            "title": "Question 3",
+            "properties": {
+                "vary_points_by_answer": false,
+                "shuffle_rules": {
+                    "choices": {
+                        "shuffled": true,
+                        "to_lock": []
+                    }
+                }
+            }
+        },
+        "points_possible": 1.0,
+        "position": 10,
+        "question_number": 10,
+        "quiz_entry_id": "149434",
+        "stimulus": null,
+        "stimulus_key": null,
+        "bola_position": 10
+    }
+]

@@ -1,0 +1,270 @@
+[
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66197",
+        "points_possible": 1.0,
+        "position": 10,
+        "regrade_info": null,
+        "score": 1.0,
+        "scored_data": {
+            "correct": true,
+            "value": {
+                "e333aa34-0b48-44c0-bd33-04d720778152": {
+                    "result_score": 1,
+                    "user_responded": true
+                }
+            }
+        }
+    },
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66274",
+        "points_possible": 1.0,
+        "position": 1,
+        "regrade_info": null,
+        "score": 1.0,
+        "scored_data": {
+            "correct": true,
+            "value": {
+                "6e336fb2-f650-4850-8a62-cd638dd8ec21": {
+                    "correct_answer": "monitoring",
+                    "result_score": 1,
+                    "correct": true,
+                    "user_response": "monitoring"
+                }
+            }
+        }
+    },
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66208",
+        "points_possible": 1.0,
+        "position": 2,
+        "regrade_info": null,
+        "score": 1.0,
+        "scored_data": {
+            "correct": true,
+            "value": {
+                "1f7da557-e1cb-40f3-bf90-99796cfddade": {
+                    "result_score": 1,
+                    "user_responded": true
+                }
+            }
+        }
+    },
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66255",
+        "points_possible": 1.0,
+        "position": 3,
+        "regrade_info": null,
+        "score": 0.3333333333333333,
+        "scored_data": {
+            "correct": false,
+            "value": {
+                "6113e4ea-7f9e-41ec-8ca4-a44cc64a50ea": {
+                    "result_score": 1,
+                    "user_responded": false
+                },
+                "152009b2-effc-4e13-b1e6-63486725ae17": {
+                    "result_score": 1,
+                    "user_responded": true
+                },
+                "11a3dbc6-e727-4125-95f6-6cf69e5c5ceb": {
+                    "result_score": 1,
+                    "user_responded": true
+                },
+                "ae722af5-c608-4f57-9a02-42d4407256b8": {
+                    "result_score": 0,
+                    "user_responded": true
+                }
+            }
+        }
+    },
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66179",
+        "points_possible": 1.0,
+        "position": 4,
+        "regrade_info": null,
+        "score": 1.0,
+        "scored_data": {
+            "correct": true,
+            "value": {
+                "b7a5a42e-69f1-4f82-8cac-45a1ba1b0d80": {
+                    "result_score": 1,
+                    "user_responded": true
+                }
+            }
+        }
+    },
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66187",
+        "points_possible": 1.0,
+        "position": 5,
+        "regrade_info": null,
+        "score": 1.0,
+        "scored_data": {
+            "correct": true,
+            "value": {
+                "bf4382bb-0c67-4319-a032-0f8ba8370d6d": {
+                    "result_score": 1,
+                    "user_responded": true
+                }
+            }
+        }
+    },
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66231",
+        "points_possible": 1.0,
+        "position": 6,
+        "regrade_info": null,
+        "score": 0.0,
+        "scored_data": {
+            "correct": false,
+            "value": {
+                "0c36839b-3923-476d-9c7a-29441b95d124": {
+                    "result_score": 0,
+                    "user_responded": true
+                },
+                "7e3ea0b9-a46a-4355-90c6-3b8d7aad371c": {
+                    "result_score": 1,
+                    "user_responded": false
+                }
+            }
+        }
+    },
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66220",
+        "points_possible": 1.0,
+        "position": 7,
+        "regrade_info": null,
+        "score": 1.0,
+        "scored_data": {
+            "correct": true,
+            "value": {
+                "200f8d71-8272-4017-9b97-99a721bef69b": {
+                    "result_score": 1,
+                    "user_responded": true
+                }
+            }
+        }
+    },
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66244",
+        "points_possible": 1.0,
+        "position": 8,
+        "regrade_info": null,
+        "score": 1.0,
+        "scored_data": {
+            "correct": true,
+            "value": {
+                "c8a9255e-cb3d-4487-8fbe-0883818b94b9": {
+                    "result_score": 1,
+                    "user_responded": true
+                },
+                "b8a9aafc-5837-4080-832e-0cb0e431e34b": {
+                    "result_score": 1,
+                    "user_responded": true
+                },
+                "8bfbe330-2889-4f7a-b12d-de4c5dbaeda5": {
+                    "result_score": 1,
+                    "user_responded": true
+                }
+            }
+        }
+    },
+    {
+        "answer_feedback": null,
+        "attempt": 1,
+        "feedback": {
+            "item_feedback": {}
+        },
+        "graded_at": "2025-11-09T06:10:56.000+00:00",
+        "grading_method": "autograde",
+        "item_id": "66265",
+        "points_possible": 1.0,
+        "position": 9,
+        "regrade_info": null,
+        "score": 0.3333333333333333,
+        "scored_data": {
+            "correct": false,
+            "value": {
+                "2b84dc05-4aaa-4255-a6d1-2d04edbba843": {
+                    "result_score": 1,
+                    "user_responded": false
+                },
+                "3ba777cc-2e25-44a1-aaa3-0fe825f5591d": {
+                    "result_score": 1,
+                    "user_responded": true
+                },
+                "66d0417a-c419-4e4d-92f1-ed4c5e21872c": {
+                    "result_score": 1,
+                    "user_responded": true
+                },
+                "fa806323-0d51-4b7b-ae2d-113e417cac18": {
+                    "result_score": 0,
+                    "user_responded": true
+                }
+            }
+        }
+    }
+]
